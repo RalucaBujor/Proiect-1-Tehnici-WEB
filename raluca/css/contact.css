@@ -1,0 +1,380 @@
+html {
+    
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+body {
+    background: url('../img/imagine.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.swagbutton{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 100px;
+    font-size: 56 px;
+    text-align: center;
+    
+    border: solid 2px #fff;
+    border-radius: 100px;
+
+    padding: 10px 80px;
+
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+
+
+}
+
+.swagbutton:hover{
+background-color: #fff;
+color:black;
+}
+
+#navbar{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+.page-grid {
+    background: white;
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #c0392b;
+    border-radius: 0px 0px 4px 4px;
+    display:block;
+    margin: 100px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:10px;
+    grid-auto-rows: 330px;
+    align-items: center;
+}
+
+
+ .address, .telephone,.about {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.my-info-title, .my-info-subtitle{
+    text-align: center;
+}
+
+.my-info{
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.element {
+    
+    margin: 10px 10px;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 9s linear infinite alternate;
+    border-radius: 100%;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      background-color: red;
+    }
+    50% {
+      background-color: orange;
+    }
+  }
+  
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(100px, -80px);
+    }
+    
+    50% {
+      transform: translate(1000px, -80px);
+    }
+    
+    80% {
+      transform: translate(100px, -80px);
+    }
+  }
+  
+@media screen and (min-width: 1280px){
+
+  .address, .telehone, .about{
+    width: 200px;
+    height: 200px;
+  }
+	.page-grid{
+    width:auto;
+	align-items:center;
+  }
+  .element{
+  height: 200px;
+  width: 200px;
+  }
+}
+
+@media screen and (max-width: 869px){
+	
+  .page-grid{
+    width: auto;
+	align-items:center;
+  }
+  .element{
+  height: 160px;
+  width: 160px;
+  }
+  .address, .telephone, .about{
+    width: 160px;
+    height: 160px;
+  }
+  .my-info-title{
+    font-size: 20px;;
+  }
+  .my-info-subtitle{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 718px){
+
+  .page-grid{
+	width:auto;
+	height: auto;
+	align-items:center;
+	grid-auto-rows: 200px;
+  }
+  .address, .telephone, .about{
+	margin-top: -20px;
+    width: 130px;
+    height: 130px;
+  }
+  .element{
+  height: 130px;
+  width: 130px;
+  }
+  .my-info{
+	font-size:15px;
+  }
+  
+  .my-info-title{
+    font-size: 13px;
+  }
+  .my-info-subtitle{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 635px){
+
+  .page-grid{
+	width:auto;
+	height:auto;
+	align-items:center;
+    grid-auto-rows: 200px;
+  }
+  .address, .telephone, .about{
+	margin-top: -20px;
+    width: 110px;
+    height: 110px;
+  }
+  .element{
+  height: 110px;
+  width: 110px;
+  }
+  .my-info{
+	font-size:13px;
+  }
+  .my-info-title{
+    font-size: 13px;
+  }
+  .my-info-subtitle{
+    font-size: 6px;
+  }
+  
+  .swagbutton{
+    font-weight: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 1x 5px;
+	border: solid 1px #fff;
+    border-radius: 20 px;
+
+	}
+}
+
+@media screen and (max-width: 579px){
+
+  .page-grid{
+	margin: 80px 100px;
+	width:auto;
+	height:auto;
+	align-items:center;
+	grid-auto-rows: 150px;
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address, .telephone, .about{
+    margin-top: -20px;
+    width: 90px;
+    height: 90px;
+  }
+  .element{
+  height: 90px;
+  width: 90px;
+  }
+  .my-info{
+	font-size:10px;
+  }
+  .my-info-title{
+    font-size: 13px;
+  }
+  .my-info-subtitle{
+    font-size: 5px;
+  }
+  
+  .swagbutton{
+    font-weight: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5x 10px;
+	  border: solid 1px #fff;
+    border-radius: 20 px;
+    display:inline-block;
+	}
+}
+
+@media screen and (max-width: 546px){
+
+  .page-grid{
+
+	width:auto;
+	height:auto;
+	align-items:center;
+	grid-auto-rows: 130px;
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address, .telephone, .about{
+    margin-top: -20px;
+    width: 30px;
+    height: 30px;
+  }
+  .element{
+  height: 30px;
+  width: 30px;
+  }
+  .my-info{
+	font-size:7px;
+  }
+   .my-info-title{
+    font-size: 13px;
+  }
+  .my-info-subtitle{
+    font-size: 5px;
+  }
+  .swagbutton{
+    font-weight: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5x 10px;
+	border: solid 1px #fff;
+    border-radius: 20 px;
+    display:inline-block;
+	line-height: 0.3;
+	}
+}
+
+@media screen and (max-width: 410px){
+
+  .page-grid{
+	width:auto;
+	height:auto;
+	align-items:center;
+	grid-auto-rows: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address, .telephone, .about{
+    margin-top: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  .element{
+  height: 20px;
+  width: 20px;
+  }
+  .my-info{
+	font-size:5px;
+  }
+   .my-info-title{
+    font-size: 7px;
+  }
+  .my-info-subtitle{
+    font-size: 5px;
+  }
+  .swagbutton{
+    font-weight: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5x 10px;
+	border: solid 1px #fff;
+    border-radius: 20 px;
+    display:inline-block;
+	line-height: 0.3;
+	}
+}
+
+@media screen and (max-width: 340px){
+
+  .page-grid{
+	width:auto;
+	height:auto;
+	align-items:center;
+	grid-auto-rows: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address, .telephone, .about{
+    margin-top: -20px;
+    width: 10px;
+    height: 10px;
+  }
+  .element{
+  height: 10px;
+  width: 10px;
+  }
+  .my-info{
+	font-size:2px;
+  }
+   .my-info-title{
+    font-size: 3px;
+  }
+  .my-info-subtitle{
+    font-size: 5px;
+  }
+  .swagbutton{
+    font-weight: 30px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5x 10px;
+	border: solid 1px #fff;
+    border-radius: 20 px;
+    display:inline-block;
+	line-height: 0.3;
+	}
+}
